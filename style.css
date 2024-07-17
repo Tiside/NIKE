@@ -8,6 +8,9 @@
     --primary-color: #f5f5f5;
     --crimson: 	#DC143C;
     --red: #FF0000;
+    --indianred: #CD5C5C;
+    --blue-color: #0000FF;
+    --green-color: 	#00FA9A;
     --black: #000000;
     --light-silver: #C0C0C0;
     --box-shadow-black: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -24,9 +27,10 @@
 
 
 .main{
-    height: auto;
+    height: 1000px;
     background-color: var(--red);
     position: relative;
+    padding: 20px;
 }
 
 .main::before {
@@ -42,7 +46,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
 }
 
 .main .nav .logo img{
@@ -74,6 +77,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .nike-text {
@@ -97,8 +101,8 @@
 
 .about{
     position: absolute;
-    top: 50%;
-    left: 5%;
+    top: 40%;
+    left: 7%;
 }
 .about .about-text h2{
     color: var(--primary-color);
@@ -116,6 +120,9 @@
     margin-bottom: 50px;
 }
 
+.about .size{
+    margin-bottom: 20px;
+}
 .about .size h5{
     color: var(--primary-color);
     margin-bottom: 10px;
@@ -138,4 +145,107 @@
     text-align: center;
     color: var(--primary-color);
     margin-bottom: 15px;
+}
+
+.color h5{
+    color: var(--primary-color);
+}
+
+.color .colors{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.color .colors .color-red{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: var(--indianred);
+    box-shadow: 0 0 10px 2px var(--black);
+}
+.color .colors .color-blue{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    box-shadow: 0 0 10px 2px var(--black);
+}
+.color .colors .color-green{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: var(--green-color);
+    box-shadow: 0 0 10px 2px var(--black);
+}
+
+.color .colors .color-red:hover,
+.color .colors .color-blue:hover,
+.color .colors .color-green:hover{
+    border: 3px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.video .video-content{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.video button{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--gray-transaperecy);
+    color: var(--primary-color);
+}
+.video button i{
+    font-size: 20px;
+}
+
+.video p{
+    color: var(--primary-color);
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.description {
+    position: absolute;
+    top: 60%;
+    right: 3%;
+    width: 25%;
+    padding: 20px;
+    box-shadow: 0 0 10px var(--transaperecy);
+}
+
+
+.description .description-content p {
+    width: 100%;
+    color: var(--primary-color);
+}
+
+.description .description-content .buttons{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+.description  button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    background-color: var(--red);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
